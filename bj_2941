@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        String arr[] = {"c=", "c-", "dz=", "d-", "lj", "nj","s=", "z="};
+        
+        String alph = sc.next();
+        
+        
+        for(int i=0;i<arr.length;i++) {      
+        	alph = alph.replace(arr[i], "a");        	
+        }
+        
+        System.out.println(alph.length());
+        
+    }
+}
